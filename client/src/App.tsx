@@ -19,7 +19,7 @@ function App() {
             <Route index element={<HomePage />} />
 
             <Route element={<VerifyAuth />}>
-              <Route path="/upload/*" element={<Upload />} />
+              <Route path="/upload" element={<Upload />} />
             </Route>
             
             <Route

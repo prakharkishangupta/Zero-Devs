@@ -124,7 +124,7 @@ const Signup = () => {
       };
       setAuth({ ...newAuth });
       localStorage.setItem("auth", JSON.stringify(newAuth));
-      const from = location.state?.from?.pathname || "/org";
+      const from = location.state?.from?.pathname || "/upload";
       navigate(from, { replace: true });
     }
   }, [isRegistered]);
